@@ -1,0 +1,262 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5215526700804@s.whatsapp.net',
+    fromMe: false,
+    id: '3ADB831754529D2A53AF',
+    participant: undefined
+  },
+  messageTimestamp: 1735677712,
+  pushName: 'Juan',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  from: '5215526700804'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b44ae661-6eaf-4234-b4a4-5d200d4058c6',
+  keyword: 'key_53f65a1c-e254-4734-b5fb-c74b18c5946a',
+  answer: '¡Hola y bienvenido a *ROMIDA*!\n' +
+    'Soy *Sofía*, tu agente virtual personalizado. Estoy aquí para asistirte en todo lo que necesites.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'e1840ee324b5ea03f5b1992ae68553c1'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d5f3d4b8-fff9-4ab3-840c-87b40462490b',
+  keyword: 'ans_b44ae661-6eaf-4234-b4a4-5d200d4058c6',
+  answer: '¿En qué puedo ayudarte hoy?\n' +
+    '\n' +
+    'Por favor, selecciona una de las siguientes opciones respondiendo con la letra correspondiente:\n' +
+    '\n' +
+    '*A* - *Estado de la estación*: Obtén información actual sobre el estado de tu estación.\n' +
+    '*B* - *Energía consumida*: Consulta el consumo y gasto de energía de la estación.\n' +
+    '*C* - *Flujo de agua*: Conoce el volumen de agua utilizado por la estación en litros.\n' +
+    '*D* - *Soluciones disponibles*: Accede a las soluciones y servicios que tenemos para ti.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'acc10e0df1607fb953f3780ebf06d5e7'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_1fc4aeb7-c28d-4a90-8e63-81a6c36de486',
+  keyword: 'ans_d5f3d4b8-fff9-4ab3-840c-87b40462490b',
+  answer: 'Estoy lista para ayudarte. ¡Espero tu respuesta para poder asistirte de la mejor manera!',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'b1bf768785047ff6e37e8b11ce40e260'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5215526700804@s.whatsapp.net',
+    fromMe: false,
+    id: '3A6D3438EFE9EDD04DCB',
+    participant: undefined
+  },
+  messageTimestamp: 1735677715,
+  pushName: 'Juan',
+  broadcast: false,
+  message: Message {
+    conversation: 'A',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'A',
+  from: '5215526700804'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_f8d8a9dd-032c-4096-bc75-758180e42c90',
+  keyword: 'key_852fd191-d9f0-4162-96d4-146b778dfb25',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '7869b44e2bcc7a5a9b883b351a284229'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5215526700804@s.whatsapp.net',
+    fromMe: false,
+    id: '3A3A753A099A3DA7CC93',
+    participant: undefined
+  },
+  messageTimestamp: 1735677892,
+  pushName: 'Juan',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  from: '5215526700804'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b44ae661-6eaf-4234-b4a4-5d200d4058c6',
+  keyword: 'key_53f65a1c-e254-4734-b5fb-c74b18c5946a',
+  answer: '¡Hola y bienvenido a *ROMIDA*!\n' +
+    'Soy *Sofía*, tu agente virtual personalizado. Estoy aquí para asistirte en todo lo que necesites.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'e1840ee324b5ea03f5b1992ae68553c1'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d5f3d4b8-fff9-4ab3-840c-87b40462490b',
+  keyword: 'ans_b44ae661-6eaf-4234-b4a4-5d200d4058c6',
+  answer: '¿En qué puedo ayudarte hoy?\n' +
+    '\n' +
+    'Por favor, selecciona una de las siguientes opciones respondiendo con la letra correspondiente:\n' +
+    '\n' +
+    '*A* - *Estado de la estación*: Obtén información actual sobre el estado de tu estación.\n' +
+    '*B* - *Energía consumida*: Consulta el consumo y gasto de energía de la estación.\n' +
+    '*C* - *Flujo de agua*: Conoce el volumen de agua utilizado por la estación en litros.\n' +
+    '*D* - *Soluciones disponibles*: Accede a las soluciones y servicios que tenemos para ti.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'acc10e0df1607fb953f3780ebf06d5e7'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_1fc4aeb7-c28d-4a90-8e63-81a6c36de486',
+  keyword: 'ans_d5f3d4b8-fff9-4ab3-840c-87b40462490b',
+  answer: 'Estoy lista para ayudarte. ¡Espero tu respuesta para poder asistirte de la mejor manera!',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'b1bf768785047ff6e37e8b11ce40e260'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5215526700804@s.whatsapp.net',
+    fromMe: false,
+    id: '3AF301AD9FD6C0269E15',
+    participant: undefined
+  },
+  messageTimestamp: 1735677897,
+  pushName: 'Juan',
+  broadcast: false,
+  message: Message {
+    conversation: 'A',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'A',
+  from: '5215526700804'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_f8d8a9dd-032c-4096-bc75-758180e42c90',
+  keyword: 'key_852fd191-d9f0-4162-96d4-146b778dfb25',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '7869b44e2bcc7a5a9b883b351a284229'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c18c570b-1706-47d4-9444-db563036febf',
+  keyword: 'ans_f8d8a9dd-032c-4096-bc75-758180e42c90',
+  answer: 'Tienes otra pregunta? o duda?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '8dd73276e6dbe80b92f44802828fc476'
+}

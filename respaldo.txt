@@ -1,0 +1,88 @@
+const flowPrincipal = addKeyword(["hola", "ole", "alo"])
+  .addAnswer("🙌 Hola bienvenido, soy tu asistente, mi nombre es: *Dayana*")
+  .addAnswer([
+    "te podre dar información sobre:",
+    "👉 *energía* consumida y/o gastada por la estación",
+    "👉 *flujo*  agua gastada en litros por la estación",
+    "👉 *parametros* podras setear información que tu desees ver",
+    "solo debes escribir la palabra '*Menu*' para desplegar las opciones",
+  ]);
+
+const flowMenuEnergy = addKeyword(EVENTS.ACTION).addAnswer(
+  "Soy el flujo de Energía y consumo electrico de tu estación ⚡"
+);
+
+const flowMenuFlow = addKeyword(EVENTS.ACTION).addAnswer(
+  "Entraste el flujo donde veras el flujo de agua 🚰"
+);
+
+const flowConsultas = addKeyword(EVENTS.ACTION)
+  .addAnswer("Podras consultar algunas cosas más🔧")
+  .addAnswer("Hacer tu consulta: ", { capture: true }, async (ctx, ctxFn) => {
+    // const prompt = "Responde Hola";
+    // const consulta = ctx.body;
+    // const answer = await chatGPT(prompt, consulta);
+
+    // console.log(answer.content);
+    // ctxFn.setAnswer(answer); // Si necesitas enviar la respuesta de vuelta al usuario
+
+    const prompt =
+      "El sistema debería ser capaz de responder preguntas acerca de Node.js.";
+    const question = "¿Qué es Node.js?";
+    chatGPT(prompt, question)
+      .then((response) => console.log("Respuesta de ChatGPT:", response))
+      .catch((error) => console.error("Error al obtener respuesta:", error));
+  });
+
+const flowSecundario = addKeyword(["2", "siguiente"]).addAnswer([
+  "📄 Aquí tenemos el flujo de agua consumida",
+]);
+
+const flowDocs = addKeyword([
+  "doc",
+  "documentacion",
+  "documentación",
+]).addAnswer(
+  [
+    "📄 Aquí encontras las documentación recuerda que puedes mejorarla",
+    "https://bot-whatsapp.netlify.app/",
+    "\n*2* Para siguiente paso.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flowGracias = addKeyword(["gracias", "grac"]).addAnswer(
+  [
+    "🚀 Puedes volver a preguntar de nuevo cuando lo desees. ",
+    "👌 Estare despierto por si necesita algo más, bye. ",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const menuFlow = addKeyword(["Menú", "Menu", "menu", "Menu"]).addAnswer(
+  menu,
+  { capture: true },
+  async (ctx, { gotoFlow, fallBack, flowDynamic }) => {
+    if (!["1", "2", "3", "0"].includes(ctx.body)) {
+      return fallBack(
+        "Respuesta no válida, por favor selecciona una de las opciones."
+      );
+    }
+    switch (ctx.body) {
+      case "1":
+        return gotoFlow(flowMenuEnergy);
+      case "2":
+        return gotoFlow(flowMenuFlow);
+      case "3":
+        return gotoFlow(flowConsultas);
+      case "0":
+        return await flowDynamic(
+          "Saliendo... Puedes volver a acceder a este menú escribiendo '*Menu*'"
+        );
+    }
+  }
+);
